@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: solid 2px blue;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 100vw;
+        }
+
+        thead {
+            background-color: #888888;
+            color: #ffffff;
+        }
+
+       td {
+            padding: 5px;
+            border: solid 2px blue;
+            text-align: left;
+        }
+
+        th {
+            padding: 5px;
+            text-align: center;
+        }
+
+        
+
+        .center-text {
+            text-align: center;
+        }
+
+        .right-text {
+            text-align: right;
+        }
+
+        .font-small {
+            font-size: 15px;
+        }
+
+        .rowspan {
+            text-align: center;
+        }
+        .null{
+            
+            border: none;
+            width: auto;
+        }
+        .red{
+            background-color: rgb(255,0,0);
+        }
+        .poison-green{
+            background-color: #7FFF00;
+        }
+        
+        .margin{
+            margin: 50px;
+        }
+
+        .deep-pink{
+            background-color: #FF1493;
+        }
+
+        .pink-purple{
+            background-color: #EE82EE;
+        }
+
+        .magenta-crayola{
+            background-color: #FF69B4;
+        }
+        .light-pink{
+            background-color: #FFB6C1;
+        }
+
+        .forest-green{
+            background-color: #228022;
+        }
+
+        .temperate-sea{
+            background-color: #3CB371;
+        }
+
+        .lime-green{
+            background-color: #32CD32;
+        }
+
+        .lime{
+            background-color: #00FF00;
+        }
+
+        .green{
+            background-color: #008000;
+        }
+
+        .green-sea{
+            background-color: #2E8B57;
+        }
+
+        .black{
+            background-color: black;
+        }
+
+        .leather-horse-saddle{
+            background-color: #8B4513;
+        }
+
+        .dark-gold{
+            background-color: #B8860B;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Название1</th>
+                <th>Название2</th>
+                <th>Ещё название</th>
+                <th>Куча элементов</th>
+                <th>Список1</th>
+                <th>Список2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="11" class="rowspan">JPMC</td>
+                <td rowspan="5">CST</td>
+                <td rowspan="3">CT</td>
+                <td>ADS</td>
+                <td class="center-text">1</td>
+                <td class="center-text">10</td>
+            </tr>
+            <tr>
+                <td>BTO</td>
+                <td class="center-text">2</td>
+                <td class="center-text">15</td>
+            </tr>
+            <tr>
+                <td>CSI</td>
+                <td class="center-text">3</td>
+                <td class="center-text">16</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="center-text">VCT</td>
+                <td>ADS</td>
+                <td class="center-text">4</td>
+                <td class="center-text">10</td>
+            </tr>
+            <tr>
+                <td>BTO</td>
+                <td class="center-text">5</td>
+                <td class="center-text">15</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="right-text font-small">Sub Total</td>
+                <td class="center-text">6</td>
+                <td class="center-text">15</td>
+            </tr>
+            <tr>
+                <td rowspan="4">CST</td>
+                <td rowspan="3">CT</td>
+                <td>ADS</td>
+                <td class="center-text">7</td>
+                <td class="center-text">10</td>
+            </tr>
+            <tr>
+                <td>BTO</td>
+                <td class="center-text">8</td>
+                <td class="center-text">15</td>
+            </tr>
+            <tr>
+                <td>CSI</td>
+                <td class="center-text">9</td>
+                <td class="center-text">16</td>
+            </tr>
+            <tr>
+                <td class="center-text">VCT</td>
+                <td>ADS</td>
+                <td class="center-text">10</td>
+                <td class="center-text">10</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="right-text font-small">Sub Total</td>
+                <td class="center-text">11</td>
+                <td class="center-text">15</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="null margin">
+        <tr>
+            <td class="red null"></td>
+            <td class="null"></td>
+            <td class="red null"></td>
+            <td class="poison-green null"></td>
+            <td class="red null"></td>
+            <td class="null"></td>
+            <td class="red null"></td>
+        </tr>
+        <tr>
+            <td class="null"></td>
+            <td class="red null"></td>
+            <td class="poison-green null"></td>
+            <td class="null"></td>
+            <td class="poison-green null"></td>
+            <td class="red null"></td>
+            <td class="null"></td>
+        </tr>
+        <tr>
+            <td class="red null"></td>
+            <td class="poison-green null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="poison-green null"></td>
+            <td class="red null"></td>
+        </tr>
+        <tr>
+            <td class="poison-green null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="red null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="poison-green null"></td>
+        </tr>
+        <tr>
+            <td class="red null"></td>
+            <td class="poison-green null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="poison-green null"></td>
+            <td class="red null"></td>
+        </tr>
+        <tr>
+            <td class="null"></td>
+            <td class="red null"></td>
+            <td class="poison-green null"></td>
+            <td class="null"></td>
+            <td class="poison-green null"></td>
+            <td class="red null"></td>
+            <td class="null"></td>
+        </tr>
+        <tr>
+            <td class="red null"></td>
+            <td class="null"></td>
+            <td class="red null"></td>
+            <td class="poison-green null"></td>
+            <td class="red null"></td>
+            <td class="null"></td>
+            <td class="red null"></td>
+        </tr>
+    </table>
+
+    <table class="null margin">
+        <tr>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="deep-pink null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="forest-green null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="deep-pink null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>           
+        </tr>
+        <tr>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="deep-pink null"></td>
+            <td class="pink-purple null"></td>
+            <td class="deep-pink null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="forest-green null"></td>
+            <td class="temperate-sea null"></td>
+            <td class="forest-green null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="deep-pink null"></td>
+            <td class="pink-purple null"></td>
+            <td class="deep-pink null"></td>
+            <td class="null"></td>
+            <td class="null"></td>           
+        </tr>
+        <tr>
+            <td class="null"></td>
+            <td class="deep-pink null"></td>
+            <td class="pink-purple null"></td>
+            <td class="magenta-crayola null"></td>
+            <td class="pink-purple null"></td>
+            <td class="deep-pink null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null forest-green"></td>
+            <td class="null temperate-sea"></td>
+            <td class="lime-green null"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null forest-green"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="deep-pink null"></td>
+            <td class="pink-purple null"></td>
+            <td class="magenta-crayola null"></td>
+            <td class="pink-purple null"></td>
+            <td class="deep-pink null"></td>
+            <td class="null"></td>           
+        </tr>
+        <tr>
+            <td class="null deep-pink"></td>
+            <td class="null pink-purple"></td>
+            <td class="null magenta-crayola"></td>
+            <td class="light-pink null"></td>
+            <td class="null magenta-crayola"></td>
+            <td class="null pink-purple"></td>
+            <td class="null deep-pink"></td>
+            
+            <td class="null"></td>
+            <td class="null forest-green"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null lime-green"></td>
+            <td class="lime null"></td>
+            <td class="null lime-green"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null forest-green"></td>
+            <td class="null"></td>
+            
+            <td class="null deep-pink"></td>
+            <td class="null pink-purple"></td>
+            <td class="null magenta-crayola"></td>
+            <td class="light-pink null"></td>
+            <td class="null magenta-crayola"></td>
+            <td class="null pink-purple"></td>
+            <td class="null deep-pink"></td>         
+        </tr>
+        <tr>
+            <td class="null"></td>
+            <td class="deep-pink null"></td>
+            <td class="pink-purple null"></td>
+            <td class="magenta-crayola null"></td>
+            <td class="pink-purple null"></td>
+            <td class="deep-pink null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null forest-green"></td>
+            <td class="null temperate-sea"></td>
+            <td class="lime-green null"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null forest-green"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="deep-pink null"></td>
+            <td class="pink-purple null"></td>
+            <td class="magenta-crayola null"></td>
+            <td class="pink-purple null"></td>
+            <td class="deep-pink null"></td>
+            <td class="null"></td>           
+        </tr>
+        <tr>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="deep-pink null"></td>
+            <td class="pink-purple null"></td>
+            <td class="deep-pink null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="forest-green null"></td>
+            <td class="temperate-sea null"></td>
+            <td class="forest-green null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="deep-pink null"></td>
+            <td class="pink-purple null"></td>
+            <td class="deep-pink null"></td>
+            <td class="null"></td>
+            <td class="null"></td>           
+        </tr>
+        <tr>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="deep-pink null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="forest-green null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="deep-pink null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>           
+        </tr>
+    </table>
+    <table class="null margin">
+        <tr>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null green"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td> 
+        </tr>
+        <tr>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null green-sea"></td>
+            <td class="null green-sea"></td>
+            <td class="null green-sea"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td> 
+        </tr>
+        <tr>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>  
+        </tr>
+        <tr>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>  
+        </tr>
+        <tr>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null green"></td>
+            <td class="null green"></td>
+            <td class="null green"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td> 
+        </tr>
+        <tr>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null green-sea"></td>
+            <td class="null green-sea"></td>
+            <td class="null green-sea"></td>
+            <td class="null green-sea"></td>
+            <td class="null green-sea"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>  
+        </tr>
+        <tr>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>  
+        </tr>
+        <tr>
+            <td class="null black"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null black"></td>  
+        </tr>
+        <tr>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null green"></td>
+            <td class="null green"></td>
+            <td class="null green"></td>
+            <td class="null green"></td>
+            <td class="null green"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td> 
+        </tr>
+        <tr>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null green-sea"></td>
+            <td class="null green-sea"></td>
+            <td class="null green-sea"></td>
+            <td class="null green-sea"></td>
+            <td class="null green-sea"></td>
+            <td class="null green-sea"></td>
+            <td class="null green-sea"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>  
+        </tr>
+        <tr>
+            <td class="null black"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null temperate-sea"></td>
+            <td class="null black"></td>  
+        </tr>
+        <tr>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>
+            <td class="null lime-green"></td>  
+        </tr>
+        <tr>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null leather-horse-saddle"></td>
+            <td class="null dark-gold"></td>
+            <td class="null leather-horse-saddle"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td> 
+        </tr>
+        <tr>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null leather-horse-saddle"></td>
+            <td class="null dark-gold"></td>
+            <td class="null leather-horse-saddle"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td> 
+        </tr>
+        <tr>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null leather-horse-saddle"></td>
+            <td class="null dark-gold"></td>
+            <td class="null leather-horse-saddle"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td> 
+        </tr>
+        <tr>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null leather-horse-saddle"></td>
+            <td class="null dark-gold"></td>
+            <td class="null leather-horse-saddle"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td>
+            <td class="null black"></td> 
+        </tr>
+    </table>
+    
+    
+</body>
+</html>
